@@ -1,5 +1,6 @@
 {
   "private": true,
+  "homepage": "https://<github_username>.github.io/<app_repo>",
   "name": "portofolio",
   "version": "1.0.0",
   "scripts": {
