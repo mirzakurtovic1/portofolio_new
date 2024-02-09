@@ -4,7 +4,7 @@
   "name": "portofolio",
   "version": "1.0.0",
   "scripts": {
-    "build": "react-scripts --openssl-legacy-provider build",
+    "build": "CI=false && react-scripts --openssl-legacy-provider build",
     "predeploy": "npm run --openssl-legacy-provider build",
     "deploy": "gh-pages -b gh-pages -d --openssl-legacy-provider build",
     "eject": "react-scripts eject",
