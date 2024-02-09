@@ -49,7 +49,7 @@ jobs:
       run: npm run build
 
     - name: Set up Git
-      run: git config --global user.email "mirzakurtovic0@gmail.com" && git config --global user.name "Mirza Kurtovic"
+      run: git config --global user.email "mirzakurtovic0@gmail.com" && git config --global user.name "mirzakurtovic"
 
     - name: Deploy
       run: npm run deploy
