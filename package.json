@@ -6,7 +6,7 @@
   "scripts": {
     "build": "CI=false && react-scripts --openssl-legacy-provider build",
     "predeploy": "npm run --openssl-legacy-provider build",
-    "deploy": "CI=false && gh-pages -b gh-pages -d --openssl-legacy-provider build",
+    "deploy": "CI=false && gh-pages -b gh-pages -d build",
     "eject": "react-scripts eject",
     "start": "react-scripts --openssl-legacy-provider start",
     "test": "react-scripts test"
