@@ -45,9 +45,6 @@ jobs:
         git config --global user.name "mirzakurtovic"
         git config --global user.email "mirzakurtovic0@gmail.com"
 
-    - name: git
-      run: git remote add origin https://github.com/mirzakurtovic/mirzakurtovic1.github.io.git
-
     - name: Install dependencies
       run: npm install --legacy-peer-deps
 
