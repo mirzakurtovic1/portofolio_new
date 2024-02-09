@@ -48,5 +48,8 @@ jobs:
     - name: Build
       run: npm run build
 
+    - name: Set up Git
+      run: git config --global user.email "mirzakurtovic0@gmail.com" && git config --global user.name "Mirza Kurtovic"
+
     - name: Deploy
       run: npm run deploy
