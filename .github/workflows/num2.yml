@@ -31,6 +31,12 @@ jobs:
         node-version: [20.x]
 
     steps:
+    
+    - name: Set up Git
+      run: |
+        git config --global user.name "mirzakurtovic"
+        git config --global user.email "mirzakurtovic0@gmail.com"
+    
     - name: Checkout repository
       uses: actions/checkout@v2
 
@@ -47,6 +53,6 @@ jobs:
 
     - name: Build
       run: npm run build
-
+      
     - name: Deploy
       run: npm run deploy
