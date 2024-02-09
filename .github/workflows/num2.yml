@@ -31,12 +31,7 @@ jobs:
         node-version: [20.x]
 
     steps:
-    
-    - name: Set up Git
-      run: |
-        git config --global user.name "mirzakurtovic"
-        git config --global user.email "mirzakurtovic0@gmail.com"
-    
+  
     - name: Checkout repository
       uses: actions/checkout@v2
 
@@ -44,6 +39,14 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+
+    - name: Set up Git
+      run: |
+        git config --global user.name "mirzakurtovic"
+        git config --global user.email "mirzakurtovic0@gmail.com"
+
+    - name: git
+      run: git remote add origin https://github.com/mirzakurtovic/mirzakurtovic1.github.io.git
 
     - name: Install dependencies
       run: npm install --legacy-peer-deps
